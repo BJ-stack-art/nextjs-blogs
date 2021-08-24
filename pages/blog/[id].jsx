@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 import AppBar from '../../comps/home/appbar'
-import Blog from '../../comps/home/blog'
+import Link from 'next/link'
 import { makeStyles } from '@material-ui/core/styles'
-import { Container, Grid } from '@material-ui/core'
+import { Container, Grid, Button , Box } from '@material-ui/core'
 
 const useStyles = makeStyles({
   root: {
@@ -29,11 +29,22 @@ export default function Home() {
       <Container className={classes.root}>
 
         
-        <h1 className={styles.title}>
-          Detail to <a href="https://nextjs.org">Blogs!</a>
+        <h1>
+          Judul Blog
         </h1>
+        <h4>Sabtu , 23 Agustus 2021</h4>
+        <Box>
+          <Image src="/blogs/thumbnail.jpg" alt="Thumbnail blog" layout="responsive" width={100} height={50} />
+        </Box>
+        <Box>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, autem quia, in nobis placeat asperiores voluptas deleniti ullam repudiandae aperiam ducimus vero laboriosam molestias facere libero corrupti. Consequatur, sit dolorem!Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, autem quia, in nobis placeat asperiores voluptas deleniti ullam repudiandae aperiam ducimus vero laboriosam molestias facere libero corrupti. Consequatur, sit dolorem!Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, autem quia, in nobis placeat asperiores voluptas deleniti ullam repudiandae aperiam ducimus vero laboriosam molestias facere libero corrupti. Consequatur, sit dolorem!Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, autem quia, in nobis placeat asperiores voluptas deleniti ullam repudiandae aperiam ducimus vero laboriosam molestias facere libero corrupti. Consequatur, sit dolorem!</p>
+        </Box>
 
-
+        <Link href="/" >
+          <Button variant="contained" color="primary">
+            Back Home
+          </Button>
+        </Link>
 
         
       </Container>

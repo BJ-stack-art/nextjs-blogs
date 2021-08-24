@@ -34,14 +34,14 @@ export default function MediaCard() {
             Lizard
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+            asdflkj are a widespread group of squamate reptiles, with over 6,000 species, ranging
             across all continents except Antarctica
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Link href="/blog/1" >
-          <Button size="small" color="primary">
+          <Button size="small" variant="contained" color="primary">
             Detail
           </Button>
         </Link>
