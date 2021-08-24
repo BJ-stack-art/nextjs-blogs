@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import AppBar from '../comps/home/appbar'
-import Blog from '../comps/home/blog'
+import styles from '../../styles/Home.module.css'
+import AppBar from '../../comps/home/appbar'
+import Blog from '../../comps/home/blog'
 import { makeStyles } from '@material-ui/core/styles'
 import { Container, Grid } from '@material-ui/core'
 
@@ -30,27 +30,10 @@ export default function Home() {
 
         
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Blogs!</a>
+          Detail to <a href="https://nextjs.org">Blogs!</a>
         </h1>
 
 
-        <Grid container justifyContent="center" spacing={1} >
-          <Grid item lg={4} className={classes.item} >
-            <Blog />
-          </Grid>
-          <Grid item lg={4} className={classes.item} >
-            <Blog />
-          </Grid>
-          <Grid item lg={4} className={classes.item} >
-            <Blog />
-          </Grid>
-          <Grid item lg={4} className={classes.item} >
-            <Blog />
-          </Grid>
-          <Grid item lg={4} className={classes.item} >
-            <Blog />
-          </Grid>
-        </Grid>
 
         
       </Container>
